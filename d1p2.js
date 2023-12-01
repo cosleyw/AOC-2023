@@ -1,0 +1,2 @@
+let nums = {"1": "1", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9", "on": "1", "tw": "2", "thre": "3", "four": "4", "fiv": "5", "six": "6", "seve": "7", "eigh": "8", "nin": "9"};
+let s = prompt().split("\n").map(v=>v.match(/(on(?=e)|tw(?=o)|thre(?=e)|four|fiv(?=e)|six|seve(?=n)|eigh(?=t)|nin(?=e)|[1-9])/g).map(v=>(nums[v]))).map(v=>+(v[0]+v[v.length-1])).reduce((a,b)=>a+b);
